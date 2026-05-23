@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio | M. Qoidul Ghuril Muhajalin</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Konfigurasi warna kustom Dark & Gold -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        darkMain: '#0d0d0d',
+                        darkCard: '#1a1a1a',
+                        gold: '#D4AF37',
+                        goldHover: '#b5952f',
+                        textMuted: '#a3a3a3'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Efek garis bawah mewah untuk judul section */
+        .title-underline::after {
+            content: '';
+            display: block;
+            width: 60px;
+            height: 3px;
+            background-color: #D4AF37;
+            margin: 12px auto 0;
+            border-radius: 2px;
+        }
+    </style>
+</head>
+<body class="bg-darkMain text-gray-200 font-sans antialiased selection:bg-gold selection:text-darkMain">
+
+    <!-- Navbar Sederhana -->
+    <nav class="sticky top-0 z-50 bg-darkMain/90 backdrop-blur-md border-b border-gold/20">
+        <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+            <span class="text-xl font-bold text-gold tracking-widest">M QOIDUL GHURIL MUHAJALIN</span>
+            <div class="hidden md:flex gap-6 text-sm font-medium">
+                <a href="#beranda" class="hover:text-gold transition-colors duration-300">Beranda</a>
+                <a href="#keahlian" class="hover:text-gold transition-colors duration-300">Keahlian</a>
+                <a href="#pengalaman" class="hover:text-gold transition-colors duration-300">Pengalaman</a>
+                <a href="#projek" class="hover:text-gold transition-colors duration-300">Projek</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="max-w-6xl mx-auto px-6">
+        
+        <!-- SECTION 1: HERO / BERANDA -->
+        <section id="beranda" class="min-h-[85vh] flex flex-col md:flex-row items-center justify-center gap-12 py-20">
+            <!-- Foto Profil Dibingkai -->
+            <div class="relative group">
+                <div class="absolute -inset-1 bg-gradient-to-r from-gold to-yellow-600 rounded-full blur opacity-25 group-hover:opacity-50 transition duration-1000 group-hover:duration-200"></div>
+                <!-- GANTI URL GAMBAR DI BAWAH INI UNTUK FOTO PROFIL -->
+                <img src="Foto-M. Qoidul Ghuril Muhajalin.WEBP" 
+                     alt="Foto Profil" 
+                     class="relative w-56 h-56 md:w-72 md:h-72 object-cover rounded-full border-4 border-gold shadow-[0_0_25px_rgba(212,175,55,0.4)]">
+            </div>
+
+            <!-- Teks Perkenalan -->
+            <div class="text-center md:text-left max-w-xl">
+                <h2 class="text-gold font-medium tracking-wide uppercase text-sm mb-2">Halo, Selamat Datang</h2>
+                <h1 class="text-4xl md:text-6xl font-bold text-white mb-4 leading-tight">
+                    M. Qoidul Ghuril Muhajalin
+                </h1>
+                <h3 class="text-xl md:text-2xl text-gray-300 mb-6 font-light">
+                    Information Technology Professional | Full-Stack Developer
+                </h3>
+                <p class="text-textMuted mb-8 leading-relaxed">
+                    Lulusan S-1 Teknologi Informasi Telkom University. Memiliki minat mendalam pada pengembangan aplikasi web dan mobile modern, serta pengelolaan infrastruktur jaringan dan hardware. Selalu antusias merancang UI yang estetik dan sistem yang efisien.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+                    <!--<a href="#projek" class="px-8 py-3 bg-gold text-darkMain font-semibold rounded-md hover:bg-goldHover transition-all shadow-[0_0_15px_rgba(212,175,55,0.3)]">
+                        Lihat Portofolio
+                    </a>-->
+                    <a href="#pengalaman" class="px-8 py-3 border border-gold text-gold font-semibold rounded-md hover:bg-gold/10 transition-all">
+                        Pengalaman Kerja
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 2: KEAHLIAN (SKILLS) -->
+        <section id="keahlian" class="py-20 border-t border-white/5">
+            <h2 class="text-3xl font-bold text-center text-white mb-12 title-underline">Keahlian</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+                <!-- Hard Skills -->
+                <div class="bg-darkCard p-8 rounded-xl border border-white/5 hover:border-gold/30 transition-colors">
+                    <h3 class="text-xl font-semibold text-gold mb-6 flex items-center gap-2">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path></svg>
+                        Hard Skills
+                    </h3>
+                    <div class="flex flex-wrap gap-3">
+                        <span class="px-4 py-2 bg-darkMain border border-gold/40 text-gray-300 rounded-full text-sm">Laravel & Blade</span>
+                        <span class="px-4 py-2 bg-darkMain border border-gold/40 text-gray-300 rounded-full text-sm">Ms. Word & Ms. Excel</span>
+                        <span class="px-4 py-2 bg-darkMain border border-gold/40 text-gray-300 rounded-full text-sm">IT Support</span>
+                        <span class="px-4 py-2 bg-darkMain border border-gold/40 text-gray-300 rounded-full text-sm">Data Analyst</span>
+                        <span class="px-4 py-2 bg-darkMain border border-gold/40 text-gray-300 rounded-full text-sm">Machine Learning</span>
+                        <span class="px-4 py-2 bg-darkMain border border-gold/40 text-gray-300 rounded-full text-sm">Social Media Management</span>
+                    </div>
+                </div>
+
+                <!-- Soft Skills -->
+                <div class="bg-darkCard p-8 rounded-xl border border-white/5 hover:border-gold/30 transition-colors">
+                    <h3 class="text-xl font-semibold text-gold mb-6 flex items-center gap-2">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"></path></svg>
+                        Soft Skills
+                    </h3>
+                    <div class="flex flex-wrap gap-3">
+                        <span class="px-4 py-2 bg-darkMain text-gray-300 rounded-full text-sm shadow-[inset_0_0_2px_rgba(212,175,55,0.5)]">Problem Solving</span>
+                        <span class="px-4 py-2 bg-darkMain text-gray-300 rounded-full text-sm shadow-[inset_0_0_2px_rgba(212,175,55,0.5)]">Digital Marketing Strategy</span>
+                        <span class="px-4 py-2 bg-darkMain text-gray-300 rounded-full text-sm shadow-[inset_0_0_2px_rgba(212,175,55,0.5)]">Data Management</span>
+                        <span class="px-4 py-2 bg-darkMain text-gray-300 rounded-full text-sm shadow-[inset_0_0_2px_rgba(212,175,55,0.5)]">Target Achievement</span>
+                        <span class="px-4 py-2 bg-darkMain text-gray-300 rounded-full text-sm shadow-[inset_0_0_2px_rgba(212,175,55,0.5)]">Public Speaking & Rekrutmen</span>
+                        <span class="px-4 py-2 bg-darkMain text-gray-300 rounded-full text-sm shadow-[inset_0_0_2px_rgba(212,175,55,0.5)]">Adaptabilitas Tinggi</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 3: PENGALAMAN -->
+        <section id="pengalaman" class="py-20 border-t border-white/5">
+            <h2 class="text-3xl font-bold text-center text-white mb-12 title-underline">Pengalaman Kerja</h2>
+            
+            <div class="space-y-6 relative before:absolute before:inset-0 before:ml-5 before:-translate-x-px md:before:mx-auto md:before:translate-x-0 before:h-full before:w-0.5 before:bg-gradient-to-b before:from-transparent before:via-gold/50 before:to-transparent">
+                
+                <!-- Item Pengalaman 1 -->
+                <div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group is-active">
+                    <div class="flex items-center justify-center w-10 h-10 rounded-full border-2 border-gold bg-darkMain shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2 shadow-[0_0_10px_rgba(212,175,55,0.5)] z-10"></div>
+                    <div class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] bg-darkCard p-6 rounded-xl border border-white/5 hover:border-gold/50 transition-all duration-300">
+                        <div class="flex flex-col md:flex-row md:items-center justify-between mb-2">
+                            <h3 class="font-bold text-lg text-white">Admin Store</h3>
+                            <span class="text-gold text-sm font-medium">2025 - 2026</span>
+                        </div>
+                        <h4 class="text-gray-400 text-sm mb-3">PetsNPlants, Surabaya</h4>
+                        <p class="text-textMuted text-sm">Mengelola operasional toko dan secara konsisten melampaui target penjualan hingga 35%. Memastikan kelancaran sistem inventaris.</p>
+                    </div>
+                </div>
+
+                <!-- Item Pengalaman 2 -->
+                <div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group is-active">
+                    <div class="flex items-center justify-center w-10 h-10 rounded-full border-2 border-gold bg-darkMain shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2 shadow-[0_0_10px_rgba(212,175,55,0.5)] z-10"></div>
+                    <div class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] bg-darkCard p-6 rounded-xl border border-white/5 hover:border-gold/50 transition-all duration-300">
+                        <div class="flex flex-col md:flex-row md:items-center justify-between mb-2">
+                            <h3 class="font-bold text-lg text-white">Digital Marketing</h3>
+                            <span class="text-gold text-sm font-medium">2025</span>
+                        </div>
+                        <h4 class="text-gray-400 text-sm mb-3">LOOP, Surabaya</h4>
+                        <p class="text-textMuted text-sm">Fokus pada strategi media sosial dan penjualan. Merencanakan kampanye digital untuk meningkatkan *brand awareness* dan konversi.</p>
+                    </div>
+                </div>
+
+                <!-- Item Pengalaman 3 -->
+                <div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group is-active">
+                    <div class="flex items-center justify-center w-10 h-10 rounded-full border-2 border-gold bg-darkMain shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2 shadow-[0_0_10px_rgba(212,175,55,0.5)] z-10"></div>
+                    <div class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] bg-darkCard p-6 rounded-xl border border-white/5 hover:border-gold/50 transition-all duration-300">
+                        <div class="flex flex-col md:flex-row md:items-center justify-between mb-2">
+                            <h3 class="font-bold text-lg text-white">Warehouse Staff</h3>
+                            <span class="text-gold text-sm font-medium">2025</span>
+                        </div>
+                        <h4 class="text-gray-400 text-sm mb-3">SPX, Surabaya</h4>
+                        <p class="text-textMuted text-sm">Bertanggung jawab dalam sektor logistik dan manajemen data gudang guna memastikan alur barang efisien dan akurat.</p>
+                    </div>
+                </div>
+
+                <!-- Item Pengalaman 4 -->
+                <div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group is-active">
+                    <div class="flex items-center justify-center w-10 h-10 rounded-full border-2 border-gold bg-darkMain shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2 shadow-[0_0_10px_rgba(212,175,55,0.5)] z-10"></div>
+                    <div class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] bg-darkCard p-6 rounded-xl border border-white/5 hover:border-gold/50 transition-all duration-300">
+                        <div class="flex flex-col md:flex-row md:items-center justify-between mb-2">
+                            <h3 class="font-bold text-lg text-white">IT Staff Intern</h3>
+                            <span class="text-gold text-sm font-medium">2022</span>
+                        </div>
+                        <h4 class="text-gray-400 text-sm mb-3">PT PAL, Surabaya</h4>
+                        <p class="text-textMuted text-sm">Terlibat dalam *website development* (sistem HR) dan *hardware maintenance*, termasuk router, switch, dan printer.</p>
+                    </div>
+                </div>
+
+                <!-- Item Pengalaman 5 -->
+                <div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group is-active">
+                    <div class="flex items-center justify-center w-10 h-10 rounded-full border-2 border-gold bg-darkMain shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2 shadow-[0_0_10px_rgba(212,175,55,0.5)] z-10"></div>
+                    <div class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] bg-darkCard p-6 rounded-xl border border-white/5 hover:border-gold/50 transition-all duration-300">
+                        <div class="flex flex-col md:flex-row md:items-center justify-between mb-2">
+                            <h3 class="font-bold text-lg text-white">Student Admission</h3>
+                            <span class="text-gold text-sm font-medium">2019 - 2021</span>
+                        </div>
+                        <h4 class="text-gray-400 text-sm mb-3">Telkom University</h4>
+                        <p class="text-textMuted text-sm">Mewakili kampus dalam pendaftaran mahasiswa baru. Sukses merekrut lebih dari 1.000 kandidat potensial selama masa bakti.</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- SECTION 4: PROJEK / PORTOFOLIO VISUAL -->
+        <section id="projek" class="py-20 border-t border-white/5">
+            <h2 class="text-3xl font-bold text-center text-white mb-12 title-underline">Projek Tersorot</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Card Projek 1 -->
+                <div class="bg-darkCard rounded-xl overflow-hidden border border-white/5 group hover:-translate-y-2 transition-transform duration-300">
+                    <!-- TEMPAT GAMBAR 1 -->
+                    <div class="h-48 overflow-hidden bg-black/50 relative">
+                        <img src="M. Qoidul Ghuril-Sertifikat-LooP.webp" 
+                             alt="Gambar Projek" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-white mb-2 group-hover:text-gold transition-colors">Admin Digital Marketing</h3>
+                        <p class="text-textMuted text-sm mb-4">Merencanakan dan membuat campaign konten social media</p>
+                        <div class="flex gap-2">
+                            <span class="text-xs text-gold bg-gold/10 px-2 py-1 rounded">Instagram</span>
+                            <span class="text-xs text-gold bg-gold/10 px-2 py-1 rounded">Tiktok</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card Projek 2 -->
+                <div class="bg-darkCard rounded-xl overflow-hidden border border-white/5 group hover:-translate-y-2 transition-transform duration-300">
+                    <!-- TEMPAT GAMBAR 2 -->
+                    <div class="h-48 overflow-hidden bg-black/50 relative">
+                        <img src="M. Qoidul Sertifikat PT PaL.webp" 
+                             alt="Gambar Projek" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-white mb-2 group-hover:text-gold transition-colors">IT Support Intern</h3>
+                        <p class="text-textMuted text-sm mb-4">Pengembangan sistem manajemen sumber daya manusia berbasis web dan mengintegrasikan data karyawan dengan aman. Maintenance Hardware seperti PC, Printer dan Server.</p>
+                        <div class="flex gap-2">
+                            <span class="text-xs text-gold bg-gold/10 px-2 py-1 rounded">Laravel</span>
+                            <span class="text-xs text-gold bg-gold/10 px-2 py-1 rounded">Troubleshooting</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card Projek 3 -->
+                <div class="bg-darkCard rounded-xl overflow-hidden border border-white/5 group hover:-translate-y-2 transition-transform duration-300">
+                    <!-- TEMPAT GAMBAR 3 -->
+                    <div class="h-48 overflow-hidden bg-black/50 relative">
+                        <img src="M. Qoidul Sertifikat Junior Web Developer.webp" 
+                             alt="Gambar Projek" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-white mb-2 group-hover:text-gold transition-colors">Mobile App Prototype</h3>
+                        <p class="text-textMuted text-sm mb-4">Sertifikasi Web Developer By BNSP</p>
+                        <div class="flex gap-2">
+                            <span class="text-xs text-gold bg-gold/10 px-2 py-1 rounded">HTML</span>
+                            <span class="text-xs text-gold bg-gold/10 px-2 py-1 rounded">CSS</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="bg-darkMain py-8 border-t border-gold/20 text-center">
+        <p class="text-textMuted text-sm">
+            Waru, Sidoarjo, Jawa Timur <br>
+            &copy; 2026 M. Qoidul Ghuril Muhajalin. Didesain dengan Tailwind CSS.
+        </p>
+    </footer>
+
+</body>
+</html>
